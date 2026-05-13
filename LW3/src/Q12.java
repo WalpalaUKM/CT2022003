@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Q12 {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a sentence: ");
+        String sentence = scanner.nextLine();
+
+        System.out.print("Enter word to replace: ");
+        String oldWord = scanner.nextLine();
+
+        System.out.print("Enter replacement word: ");
+        String newWord = scanner.nextLine();
+
+        String result = sentence.replace(oldWord, newWord);
+
+        System.out.println("Updated sentence:");
+        System.out.println(result);
+
+        scanner.close();
+    }
+}
